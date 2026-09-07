@@ -1,0 +1,35 @@
+:root {
+  --navy: #061426;
+  --navy-2: #0a1d35;
+  --blue: #0a8ef5;
+  --cyan: #35a9ff;
+  --teal: #14b8a6;
+  --ink: #0b1730;
+  --muted: #53627a;
+  --line: #dfe7f1;
+  --paper: #f6f9fc;
+}
+
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.site-header { width: 100%; max-width: none; height: 82px; margin: 0; padding: 0 max(24px, calc((100vw - 1200px)/2)); position: absolute; inset: 0 0 auto; z-index: 20; border-bottom: 1px solid rgba(255,255,255,.1); background: rgba(4,17,32,.55); backdrop-filter: blur(12px); }
+.brand { display: inline-flex; align-items: center; gap: 11px; color: var(--cyan); flex-shrink: 0; }
+.brand-mark { width: 48px; height: 52px; overflow: visible; background: none; clip-path: none; }
+.brand-word { display: flex; flex-direction: column; align-items: center; line-height: 1; font-weight: 800; font-size: 23px; letter-spacing: .13em; white-space: nowrap; }
+.brand-limited { display: flex; align-items: center; gap: 7px; width: 100%; margin-top: 6px; font-size: 7px; letter-spacing: .28em; opacity: .82; white-space: nowrap; }
+.brand-limited::before, .brand-limited::after { content: ""; flex: 1; min-width: 12px; border-top: 2px solid currentColor; }
+.blog-label { margin-left: 7px; padding-left: 15px; border-left: 1px solid rgba(255,255,255,.25); color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: .15em; }
+nav { color: rgba(255,255,255,.88); font-size: 14px; font-weight: 500; }
+nav a:hover { color: #fff; }
+.nav-cta { padding: 13px 20px; border: 0; border-radius: 9px; background: linear-gradient(135deg, var(--blue), #0874df); color: #fff; font-weight: 700; box-shadow: 0 10px 30px rgba(10,142,245,.22); }
+.menu-toggle { color: #fff; border-color: rgba(255,255,255,.2); background: transparent; }
+.hero { min-height: 640px; padding-top: 150px; padding-bottom: 88px; background: linear-gradient(110deg,#03101f 0%,#06182d 52%,#03101f 100%); }
+.hero h1, .section h2, .article-card h3, .bank-card h3, .about-label, .card-number { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+.primary, .button.white { border-radius: 9px; background: linear-gradient(135deg,var(--blue),#0874df); box-shadow: 0 10px 30px rgba(10,142,245,.22); }
+.footer-brand { color: #16a8f4; }
+
+@media (max-width: 850px) {
+  .site-header { min-height: 74px; height: auto; }
+  .site-header nav { background: #061426; }
+  .hero { padding-top: 120px; }
+  .blog-label { display: none; }
+}
