@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practical DevOps, cloud, infrastructure and data engineering articles from Sranga Limited.">
+  <meta name="theme-color" content="#07172d">
+  <title>Sranga Tech Blog | Cloud, DevOps & Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Sranga Tech Blog home">
+      <span class="brand-mark" aria-hidden="true"><span>S</span></span>
+      <span><strong>SRANGA</strong><small>TECH BLOG</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#articles">Articles</a>
+      <a href="#topics">Topics</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#question-bank">Question Bank</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Technology · Training · Careers</p>
+        <h1>Practical technology, explained from experience.</h1>
+        <p class="hero-lead">Clear guides, real-world solutions and interview preparation across DevOps, cloud, infrastructure and data engineering.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#articles">Explore articles</a>
+          <a class="button secondary" href="#question-bank">View question bank</a>
+        </div>
+      </div>
+      <aside class="terminal-card" aria-label="Topics covered">
+        <div class="terminal-top"><i></i><i></i><i></i><span>sranga.dev</span></div>
+        <pre><span>$</span> focus --on practical-skills
+
+<b>DevOps</b>       CI/CD · Git · Linux
+<b>Cloud</b>        AWS · Azure · GCP
+<b>Infrastructure</b> Terraform · Kubernetes
+<b>Data</b>         Snowflake · dbt · ETL
+
+<em>Learn. Build. Grow.</em></pre>
+      </aside>
+    </section>
+
+    <section class="topic-strip" id="topics" aria-label="Article topics">
+      <button class="topic active" type="button" data-filter="all">All topics</button>
+      <button class="topic" type="button" data-filter="devops">DevOps</button>
+      <button class="topic" type="button" data-filter="cloud">Cloud</button>
+      <button class="topic" type="button" data-filter="terraform">Terraform</button>
+      <button class="topic" type="button" data-filter="kubernetes">Kubernetes</button>
+      <button class="topic" type="button" data-filter="data">Data</button>
+      <button class="topic" type="button" data-filter="career">Careers</button>
+    </section>
+
+    <section class="articles section" id="articles">
+      <div class="section-heading">
+        <div><p class="eyebrow">Latest writing</p><h2>Start with the fundamentals</h2></div>
+        <p>Short, useful articles designed to turn concepts into skills you can apply.</p>
+      </div>
+      <div class="article-grid">
+        <article class="article-card featured" data-topic="terraform">
+          <div class="card-number">01</div>
+          <div>
+            <span class="tag">Terraform</span>
+            <h3><a href="posts/terraform-module-basics.html">How to structure a reusable Terraform module</a></h3>
+            <p>A practical starting point for variables, outputs, naming and documentation.</p>
+            <div class="card-meta"><span>6 min read</span><a href="posts/terraform-module-basics.html">Read article →</a></div>
+          </div>
+        </article>
+        <article class="article-card" data-topic="devops">
+          <div class="card-number">02</div>
+          <span class="tag">DevOps</span>
+          <h3><a href="posts/ci-cd-explained.html">CI/CD explained without the jargon</a></h3>
+          <p>Understand what happens from code commit to production deployment.</p>
+          <div class="card-meta"><span>5 min read</span><a href="posts/ci-cd-explained.html">Read →</a></div>
+        </article>
+        <article class="article-card" data-topic="career">
+          <div class="card-number">03</div>
+          <span class="tag">Interview Prep</span>
+          <h3><a href="posts/devops-scenario-questions.html">Five DevOps scenario questions</a></h3>
+          <p>Practice explaining incidents, trade-offs and production decisions.</p>
+          <div class="card-meta"><span>7 min read</span><a href="posts/devops-scenario-questions.html">Read →</a></div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>No articles in this topic yet. New practical guides are coming soon.</p>
+    </section>
+
+    <section class="question-bank section" id="question-bank">
+      <div>
+        <p class="eyebrow light">Sranga Interview Prep</p>
+        <h2>Prepare for the questions that test real experience.</h2>
+        <p>Explore curated question banks with clear answers, scenario-based explanations and practical examples for technology roles.</p>
+        <ul>
+          <li>Free sample questions before purchase</li>
+          <li>Role-based and technology-based collections</li>
+          <li>Protected access for purchased content</li>
+        </ul>
+      </div>
+      <div class="bank-card">
+        <span>Coming soon</span>
+        <h3>DevOps Interview Question Bank</h3>
+        <p>AWS · Azure · Terraform · Kubernetes · Linux · Python</p>
+        <a class="button white" href="mailto:srangaltd@gmail.com?subject=Sranga%20Interview%20Question%20Bank">Register your interest</a>
+        <small>Payment and member access will be added separately. Premium answers will not be stored in this public repository.</small>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-label">ABOUT</div>
+      <div>
+        <p class="eyebrow">Knowledge built in the real world</p>
+        <h2>Technology learning from Sranga Limited</h2>
+        <p>Sranga Tech Blog shares practical knowledge across cloud engineering, DevOps, infrastructure, data and career development. The aim is simple: make useful technology knowledge easier to understand and apply.</p>
+        <a class="text-link" href="https://srangaltd.com">Visit Sranga Limited →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"><span>S</span></span><span><strong>SRANGA</strong><small>TECH BLOG</small></span></div>
+    <p>Practical technology for businesses and professionals.</p>
+    <p>© <span id="year"></span> Sranga Limited. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
