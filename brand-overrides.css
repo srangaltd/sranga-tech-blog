@@ -213,3 +213,43 @@ body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSyst
   .sranga-logo-img{width:168px}
   .brand{gap:12px}
 }
+
+/* === V8 approved header/logo/above-the-fold refinements === */
+.site-header{
+  background:#041122 !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  border-bottom:1px solid rgba(255,255,255,.08) !important;
+}
+/* Exact user-approved Sranga artwork; its background is the same #041122 as the header. */
+.sranga-logo-img{
+  width:205px !important;
+  height:auto !important;
+  object-fit:contain !important;
+  background:transparent !important;
+}
+.brand{gap:22px !important;}
+
+/* Pull the interview subjects into the first desktop viewport. */
+.hero{
+  min-height:600px !important;
+  padding-top:118px !important;
+  padding-bottom:52px !important;
+}
+.hero-lead{margin-top:20px !important;margin-bottom:24px !important;}
+.interview-subjects{
+  margin:-18px auto 0 !important;
+  padding:12px 14px !important;
+}
+.interview-subjects .topic,
+.interview-subjects .topic.active{
+  min-height:44px !important;
+  background:#e8f4ff !important;
+  color:#0769bf !important;
+  border-color:#c8e4fb !important;
+}
+@media(max-width:850px){
+  .site-header{background:#041122 !important;}
+  .hero{min-height:auto !important;padding-top:110px !important;padding-bottom:55px !important;}
+  .sranga-logo-img{width:168px !important;}
+}
