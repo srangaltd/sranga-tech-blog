@@ -21,25 +21,29 @@
         <path fill="#061426" d="M49 18c-8 1-19 3-25 8-5 4-5 8 1 10l12 4c3 1 3 3 0 5-5 4-13 6-22 7l-4 6h14c8-2 17-5 22-10 5-5 4-10-3-13l-12-4c-2-1-2-2 0-3 4-3 11-5 19-5l-2-5Z"/>
       </svg>
       <span class="brand-word"><span class="brand-name">SRANGA</span><span class="brand-limited">LIMITED</span></span>
-      <span class="blog-label">TECH BLOG</span>
+      <span class="blog-label"><strong>INTERVIEW PREP</strong><small>Learn. Practise. Grow.</small></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Primary navigation">
       <a href="#articles">Articles</a>
-      <a href="#topics">Topics</a>
+      <a href="#articles">Tech Guides</a>
       <a href="#about">About</a>
       <a class="nav-cta" href="#question-bank">STAR Question Bank</a>
     </nav>
+    <span class="header-fern" aria-label="New Zealand inspired" role="img">
+      <svg viewBox="0 0 110 64" aria-hidden="true"><path d="M13 58C31 38 47 21 88 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><g fill="currentColor"><ellipse cx="29" cy="42" rx="10" ry="3" transform="rotate(-36 29 42)"/><ellipse cx="38" cy="34" rx="10" ry="3" transform="rotate(-32 38 34)"/><ellipse cx="48" cy="27" rx="9" ry="2.8" transform="rotate(-27 48 27)"/><ellipse cx="59" cy="21" rx="8" ry="2.6" transform="rotate(-22 59 21)"/><ellipse cx="70" cy="16" rx="7" ry="2.4" transform="rotate(-18 70 16)"/><ellipse cx="80" cy="11" rx="6" ry="2.2" transform="rotate(-14 80 11)"/><ellipse cx="34" cy="47" rx="9" ry="2.8" transform="rotate(35 34 47)"/><ellipse cx="44" cy="39" rx="9" ry="2.7" transform="rotate(31 44 39)"/><ellipse cx="54" cy="32" rx="8" ry="2.5" transform="rotate(27 54 32)"/><ellipse cx="64" cy="26" rx="7" ry="2.3" transform="rotate(23 64 26)"/><ellipse cx="74" cy="20" rx="6" ry="2.1" transform="rotate(18 74 20)"/></g></svg>
+      <small>NEW ZEALAND<br>INSPIRED</small>
+    </span>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">STAR Interviews · Technical Scenarios · Career Preparation</p>
-        <h1>Prepare for technology interviews with confidence.</h1>
+        <h1>Turn your experience<br>into interview <span class="confidence-highlight">confidence.</span></h1>
         <p class="hero-lead">Practical STAR answers, real-world technical scenarios and interview guidance for DevOps, Cloud and Data professionals.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#articles">Explore articles</a>
+          <a class="button primary" href="#articles">Explore Technical Guides →</a>
           <a class="button secondary" href="#question-bank">View STAR question bank</a>
         </div>
       </div>
@@ -56,51 +60,52 @@
       </aside>
     </section>
 
-    <section class="topic-strip" id="topics" aria-label="Article topics">
-      <button class="topic active" type="button" data-filter="all">All topics</button>
-      <button class="topic" type="button" data-filter="devops">DevOps</button>
-      <button class="topic" type="button" data-filter="cloud">Cloud</button>
-      <button class="topic" type="button" data-filter="terraform">Terraform</button>
-      <button class="topic" type="button" data-filter="kubernetes">Kubernetes</button>
-      <button class="topic" type="button" data-filter="data">Data</button>
-      <button class="topic" type="button" data-filter="career">STAR Interviews</button>
+    <section class="topic-strip interview-subjects" id="topics" aria-label="Interview question bank subjects">
+      <a class="topic active" href="posts/devops-interview-question-bank.html">All topics</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#data-engineering">Data Engineering</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#devops-aws">DevOps &amp; AWS Cloud</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#terraform-core">Terraform Core &amp; IaC</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#linux-scripting-git">Linux, Unix, Git &amp; Scripting</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#testing-automation">Testing &amp; Automation</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#azure">Microsoft Azure</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#middleware-troubleshooting">Middleware &amp; Troubleshooting</a>
+      <a class="topic" href="posts/devops-interview-question-bank.html#star-interpersonal">STAR &amp; Interpersonal Skills</a>
     </section>
 
     <section class="articles section" id="articles">
       <div class="section-heading">
-        <div><p class="eyebrow">Latest preparation</p><h2>Build stronger interview answers</h2></div>
-        <p>Practical articles to help you structure answers, explain decisions and demonstrate real experience.</p>
+        <div><p class="eyebrow">Technical Learning</p><h2>Build. Automate. Improve.</h2></div>
+        <p>Hands-on engineering guides focused on reusable infrastructure, cloud platforms, automation and production best practices.</p>
       </div>
       <div class="article-grid">
-        <article class="article-card featured" data-topic="terraform">
-          <div class="card-number">01</div>
-          <div>
-            <span class="tag">Terraform</span>
-            <h3><a href="posts/terraform-module-basics.html">How to structure a reusable Terraform module</a></h3>
-            <p>A practical starting point for variables, outputs, naming and documentation.</p>
-            <div class="card-meta"><span>6 min read</span><a href="posts/terraform-module-basics.html">Read article →</a></div>
+        <article class="article-card featured">
+          <div class="card-number">01</div><div>
+            <span class="tag">Terraform &amp; IaC</span>
+            <h3><a href="posts/terraform-module-basics.html">Build reusable Terraform modules</a></h3>
+            <p>Structure variables, outputs, naming and documentation so infrastructure code can be reused safely across environments.</p>
+            <div class="card-meta"><span>Practical guide</span><a href="posts/terraform-module-basics.html">Read guide →</a></div>
           </div>
         </article>
-        <article class="article-card" data-topic="devops">
+        <article class="article-card">
           <div class="card-number">02</div>
-          <span class="tag">DevOps</span>
-          <h3><a href="posts/ci-cd-explained.html">CI/CD explained without the jargon</a></h3>
-          <p>Understand what happens from code commit to production deployment.</p>
-          <div class="card-meta"><span>5 min read</span><a href="posts/ci-cd-explained.html">Read →</a></div>
+          <span class="tag">AWS &amp; EKS</span>
+          <h3>Build an EKS platform with Terraform</h3>
+          <p>VPC networking, EKS cluster design, managed node groups, IAM/IRSA and production-ready platform foundations.</p>
+          <div class="card-meta"><span>Series planned</span><span class="coming-soon">Coming soon</span></div>
         </article>
-        <article class="article-card" data-topic="career">
+        <article class="article-card">
           <div class="card-number">03</div>
-          <span class="tag">STAR Interview</span>
-          <h3><a href="posts/devops-scenario-questions.html">Five DevOps scenario questions</a></h3>
-          <p>Practise structuring incidents, trade-offs and production decisions using STAR.</p>
-          <div class="card-meta"><span>7 min read</span><a href="posts/devops-scenario-questions.html">Read →</a></div>
+          <span class="tag">CI/CD &amp; Automation</span>
+          <h3>Automate Terraform and EKS with GitHub Actions</h3>
+          <p>Plan, validate, approve and deploy infrastructure through a practical CI/CD workflow with environment controls.</p>
+          <div class="card-meta"><span>Series planned</span><span class="coming-soon">Coming soon</span></div>
         </article>
-        <article class="article-card" data-topic="career">
+        <article class="article-card">
           <div class="card-number">04</div>
-          <span class="tag">Question Bank</span>
-          <h3><a href="posts/devops-interview-question-bank.html">Technology interview preparation</a></h3>
-          <p>Explore eight subject banks covering technical, STAR and interpersonal interviews.</p>
-          <div class="card-meta"><span>Free preview</span><a href="posts/devops-interview-question-bank.html">Explore options →</a></div>
+          <span class="tag">DevOps Best Practices</span>
+          <h3>Production-ready DevOps patterns</h3>
+          <p>Repository structure, secrets, observability, deployment strategies, rollback and operational practices.</p>
+          <div class="card-meta"><span>Series planned</span><span class="coming-soon">Coming soon</span></div>
         </article>
       </div>
       <p class="empty-state" hidden>No articles in this topic yet. New practical guides are coming soon.</p>
@@ -112,7 +117,7 @@
         <h2>Prepare by subject. Answer with confidence.</h2>
         <p>Explore Data Engineering, DevOps, Terraform, Linux, Testing, Azure, Middleware and STAR interview preparation.</p>
         <ul>
-          <li>Three free questions per subject</li>
+          <li>Two free questions per subject</li>
           <li>One complete subject bank — NZ$10</li>
           <li>One-hour Google Meet coaching — NZ$40</li>
           <li>Question Bank + Coaching bundle — NZ$45</li>
