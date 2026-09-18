@@ -28,6 +28,10 @@ nav a:hover { color: #fff; }
 .bank-card .text-link { display: inline-block; margin-top: 2px; }
 .bank-card small { margin-top: 14px; }
 .footer-brand { color: #16a8f4; }
+.footer-logo-img { width: 160px !important; }
+.footer-tagline { text-align: center; }
+footer { grid-template-columns: auto auto 1fr !important; }
+footer > p:last-child { justify-self: end; }
 
 @media (max-width: 850px) {
   .site-header { min-height: 74px; height: auto; }
